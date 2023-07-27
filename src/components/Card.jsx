@@ -10,7 +10,7 @@ const Card = ({data, index}) => {
             <StarRatingComponent className="fs-5"
               name={data?.[index].rate.toFixed(2)}
               starCount={5}
-              value={Math.round(data?.[index].rate)}
+              value={Math.round(data?.[index].rate)/2}
               editing={true}
             />
             <h4 className="fs-4">{data?.[index].rate.toFixed(2)}/10</h4>
